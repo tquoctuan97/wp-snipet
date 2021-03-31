@@ -2,7 +2,7 @@
 * Feature: Coupon Percentage discount with limit Max Discount
 * Example: Coupon Discount 10%, max $10
 * Resource: https://www.insertcart.com/set-max-coupon-discount-amount-in-woocommerce/
-* 
+* Resouce 2: https://stackoverflow.com/questions/43887663/fix-maximum-coupon-discount-on-cart-percentage-in-woocommerce/52014312
 */
 
 add_action( 'woocommerce_coupon_options_usage_limit', 'woocommerce_coupon_add_option_max_discount', 10, 2 );
