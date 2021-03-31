@@ -8,7 +8,7 @@
 add_action( 'woocommerce_coupon_options_usage_limit', 'woocommerce_coupon_add_option_max_discount', 10, 2 );
 function woocommerce_coupon_add_option_max_discount( $coupon_id, $coupon ){
   // max discount per coupons
-	$max_discount =  get_post_meta( $coupon_id, 'max_discount', true );
+	$max_discount =  get_post_meta( $coupon_id, '_max_discount', true );
 	$args = array(
 	  'label' => 'Usage max discount', // Text in Label
 	  'placeholder' => 'Unlimited discount',
