@@ -1,7 +1,8 @@
-add_action('admin_head', 'dark-mode-editor-wp');
+add_action('admin_head', 'dark_mode_editor_wp');
 
-function dark-mode-editor-wp() {
-  echo '<style>
+function dark_mode_editor_wp() {
+   ?>
+   <style>
    /**
    * WordPress
    * Dark Editor
@@ -264,5 +265,7 @@ function dark-mode-editor-wp() {
   .wrap .CodeMirror .CodeMirror-matchingbracket {
       color: #c3e88d !important;
   }
-  </style>';
+  </style>
+
+  <?php
 }
