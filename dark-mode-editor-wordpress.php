@@ -1,6 +1,6 @@
 add_action('admin_head', 'dark-mode-editor-wp');
 
-function my_custom_fonts() {
+function dark-mode-editor-wp() {
   echo '<style>
    /**
    * WordPress
